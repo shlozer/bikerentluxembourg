@@ -1,0 +1,59 @@
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.item {
+    width: 15%;
+    display: none;
+    height: 200px;
+}
+.item.active, .item.prev, .item.next { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.item.active { 
+    left: 50%;
+}
+
+.item.prev { 
+    left: 25%;
+}
+
+.item.next { 
+    left: 75%;
+}
+
+.item img{
+    width: 70%;
+    height: auto;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    font-size: 2rem;
+}
+.pause__button {
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px;
+    left: 2px;
+}

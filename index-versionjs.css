@@ -1,0 +1,149 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Copperplate";
+	src: url('BulletNumbers_Copperplate_Pos_PDF.ttf');
+}
+
+body {
+	font-family: sans-serif;
+	overflow: hidden;
+	/*margin: 3px;*/
+}
+
+#carroussel-wrapper {
+    /*z-index: 0;*/
+    position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+#slider1, #slider2, #slider3 {
+	background: #444;
+	color: #fff;
+    height: 100%;
+	width: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /*line-height: 100%;
+    background-size: cover;*/
+	font-size: 6vh;
+
+}
+
+#txt-slider1, #txt-slider2, #txt-slider3 {
+    position: absolute;
+    top: 50%;
+    /*line-height: 100%;*/
+}
+
+
+#slider1 {
+    top: 0;
+	/*left: 0%;
+	bottom: 0;
+	right: 0;*/
+}
+#slider2 {
+    top: 0;
+	/*left: 100%;
+	bottom: 0;
+    right: 0;*/
+    background: #cc0000;
+}
+#slider3 {
+    top: 0;
+	/*left: 200%;
+	bottom: 0;
+	right: 0;*/
+}
+
+#chiffres {
+    font-family: "Copperplate", sans-serif;
+    font-size: 120%;
+    position: relative;
+    top: 2px;
+
+}
+
+#keys {
+	position: absolute;
+	z-index: 10;
+    top: 90%;
+    bottom: 0;
+	left: 0;
+	right: 0;
+	/*padding: 1rem;*/
+    color: #fff;
+    display: table;
+    text-align: center;
+    width: 100%;
+    min-height: 10%;
+	opacity: 0.5;
+}
+
+#keys span{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+#arrow-before,
+#arrow-after {
+    color: white;
+    z-index: 10;
+	background: rgba(177, 165, 165, 0.726);
+	position: absolute;
+	/*padding: 1rem;*/
+    font-size: 4rem;
+    width: 10%;
+	height: 40%;
+	top: 40%;
+    display: table;
+    text-align: center;
+    cursor: pointer;
+}
+
+#arrow-before {
+    /*display: none;*/
+    left: 0%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+#arrow-after {
+    left: 90%;   
+    border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+
+#arrow-before span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#arrow-after span{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+#arrow-before span::before {
+	content: "\276C";
+}
+
+#arrow-after span::before {
+    content: "\276D";
+}
+
